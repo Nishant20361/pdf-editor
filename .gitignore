@@ -1,0 +1,53 @@
+# Environment and Secrets
+.env
+.env*.local
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Databases & local state
+*.db
+*.sqlite
+*.sqlite3
+:memory:.ses
+
+# Python & testing
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+backend/.venv/
+backend/venv/
+
+# Uploads, exports, and generated files
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/exports/*
+!backend/exports/.gitkeep
+backend/previews/*
+uploads/*
+exports/*
+test_*.png
+test_*.pdf
+
+# Node / Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.turbo/
+node_modules/
+.next/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
